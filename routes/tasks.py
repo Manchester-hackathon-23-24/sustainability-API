@@ -1,6 +1,6 @@
 from flask import Blueprint, request
-from ..utils.db import User, TaskQueue
-from ..utils.constants import TASKS, USERS
+from utils.db import User, TaskQueue
+from utils.constants import TASKS, USERS
 
 from io import BytesIO
 

@@ -1,3 +1,4 @@
 env/
 __pycache__/
 auth0/
+config.json

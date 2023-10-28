@@ -4,12 +4,16 @@ import json
 with open('config.json') as f:
     config = json.load(f)
 
-CLUSTER = MongoClient(config['mongodb'])
+# CLUSTER = MongoClient(config['mongodb'])
 
-DB = CLUSTER['hackathon']
+# DB = CLUSTER['hackathon']
 
-USERS = DB['users']
-TASK_QUEUE = DB['task_queue']
+# USERS = DB['users']
+# TASK_QUEUE = DB['task_queue']
+
+DB = None
+USERS = None
+TASK_QUEUE = None
 
 # List of google ids that are allowed to access the admin page
 ADMINS = []
@@ -20,6 +24,8 @@ CAPITALONE_ENDPOINT = "https://sandbox.capitalone.co.uk/developer-services-platf
 AUTH0_CLIENT_ID = config["AUTH0_CLIENT_ID"]
 AUTH0_CLIENT_SECRET = config["AUTH0_CLIENT_SECRET"]
 AUTH0_DOMAIN = config["AUTH0_DOMAIN"]
+
+SECRET_KEY = config["secret_key"]
 
 TASKS = [
     {

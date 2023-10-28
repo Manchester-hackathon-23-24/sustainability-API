@@ -1,6 +1,6 @@
 from requests import request as make_request
 from flask import Blueprint, request
-from ..utils.constants import CAPITALONE_ENDPOINT, CAPITALONE_KEY
+from utils.constants import CAPITALONE_ENDPOINT, CAPITALONE_KEY
 
 REQUEST_HEADERS = {
             "Content-Type": "application/json",
