@@ -1,7 +1,7 @@
 from typing import List
 from io import BytesIO
 
-from .constants import USERS, ADMINS, TASK_QUEUE
+from utils.constants import USERS, ADMINS, TASK_QUEUE
 
 class User:
     cache = {}

@@ -4,16 +4,12 @@ import json
 with open('config.json') as f:
     config = json.load(f)
 
-# CLUSTER = MongoClient(config['mongodb'])
+CLUSTER = MongoClient(config['mongodb'])
 
-# DB = CLUSTER['hackathon']
+DB = CLUSTER['hackathon']
 
-# USERS = DB['users']
-# TASK_QUEUE = DB['task_queue']
-
-DB = None
-USERS = None
-TASK_QUEUE = None
+USERS = DB['users']
+TASK_QUEUE = DB['task_queue']
 
 # List of google ids that are allowed to access the admin page
 ADMINS = []
